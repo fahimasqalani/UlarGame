@@ -205,7 +205,7 @@ window.onload = function()
 		this.draw = function() // Méthode pour dessiner la pomme 
 		{
 			ctx.save();
-			ctx.fillStyle = "#FF0000";
+			ctx.fillStyle = "#FF00345";
 			ctx.beginPath();
 			const radius = blockSize/2;
 			const x = this.position[0]*blockSize + radius;
