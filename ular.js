@@ -135,7 +135,7 @@ window.onload = function()
 				this.ateApple=false;
 		};
 
-		this.setDirection = function(newDirection) // méthode des directions autorisées
+		this.setDirection = function(newDirection) // méthod to set direction
 		{
 			let allowedDirections;
 			switch(this.direction)
@@ -199,10 +199,11 @@ window.onload = function()
 	}
 
 	// Paramêtre de l'objet pomme 
+	// Apple object parameter
 	function Apple(position)
 	{
 		this.position = position;
-		this.draw = function() // Méthode pour dessiner la pomme 
+		this.draw = function() // Method for drawing the apple 
 		{
 			ctx.save();
 			ctx.fillStyle = "#FF0000";
@@ -235,7 +236,7 @@ window.onload = function()
 		};
 	}
 
-	// Quand l'utilisateur appuis sur une touche
+	// When the user presses a key
 	document.onkeydown = function handleKeyDown(e)
 	{
 		let key = e.keyCode;
